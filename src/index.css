@@ -13,6 +13,18 @@ body {
   background-color: rgb(39, 39, 39);
 }
 
+.background{
+  background: rgba(3, 150, 3, 0.2);
+}
+
+.background2{
+  background: rgb(139, 139, 139, 0.1);
+}
+
+.background3{
+  background: rgb(3, 150, 3);
+}
+
 
 .sidenav {
   height: 100%;
@@ -142,6 +154,7 @@ body {
   margin-top: 2rem;
   color: gray;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .table{
@@ -181,14 +194,3 @@ body {
   overflow-x: hidden; 
 }
 
-.background{
-  background: rgba(3, 150, 3, 0.2);
-}
-
-.background2{
-  background: rgb(139, 139, 139, 0.1);
-}
-
-.background3{
-  background: rgb(3, 150, 3);
-}

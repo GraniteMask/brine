@@ -11,7 +11,7 @@ function App() {
   useEffect(()=>{
     ws.onmessage = function (event) {
       console.log(event)
-      if(event.data != 'Connection established with Krypto'){
+      if(event.data){
         const json = JSON.parse(event.data);
         try {
           if ((json.event = "data")) {
@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <div className="sidenav">
-        <div>
+        <div style={{cursor: 'pointer'}}>
           <i className="fa fa-arrow-left" aria-hidden="true" style={{color: "white", marginTop: "5rem"}}></i>
         </div>
       </div>
@@ -161,12 +161,13 @@ function App() {
                   <th className='table-heading'>PRICE (USDC)</th>
                 </tr>
                 {
-                  bids != undefined && bids.asks.map((each) =>(
+                  bids.asks != undefined ? bids.asks.map((each) =>(
                     <tr>
                       <td className='table-entries' style={{color: "red"}}>{each[1]}</td>
                       <td className='table-entries' style={{color: "green"}}>{each[0]}</td>
                     </tr>
-                  ))
+                  )) :
+                  <p style={{color: "white"}}>"Loading..."</p>
                 }
               </table>
             </div>
@@ -181,12 +182,14 @@ function App() {
                   <th className='table-heading'>PRICE (USDC)</th>
                 </tr>
                 {
-                  bids != undefined  && bids.bids.map((each) =>(
+                  bids.bids != undefined ? bids.bids.map((each) =>(
                     <tr>
                       <td className='table-entries' style={{color: "red"}}>{each[1]}</td>
                       <td className='table-entries' style={{color: "green"}}>{each[0]}</td>
                     </tr>
                   ))
+                  :
+                  <p style={{color: "white"}}>"Loading..."</p>
                 }
               </table>
 
