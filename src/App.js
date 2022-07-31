@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <div className="sidenav">
         <div style={{cursor: 'pointer'}}>
-          <i className="fa fa-arrow-left" aria-hidden="true" style={{color: "white", marginTop: "5rem"}}></i>
+          <i className="fa fa-arrow-right" aria-hidden="true" style={{color: "white", marginTop: "5rem"}}></i>
         </div>
       </div>
       <div className='main'>
