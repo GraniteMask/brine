@@ -167,7 +167,7 @@ function App() {
                       <td className='table-entries' style={{color: "green"}}>{each[0]}</td>
                     </tr>
                   )) :
-                  <p style={{color: "white"}}>"Loading..."</p>
+                  <p style={{color: "white"}}><i className="fa fa-spinner fa-spin"></i> Loading...</p>
                 }
               </table>
             </div>
@@ -189,7 +189,7 @@ function App() {
                     </tr>
                   ))
                   :
-                  <p style={{color: "white"}}>"Loading..."</p>
+                  <p style={{color: "white"}}><i className="fa fa-spinner fa-spin"></i> Loading...</p>
                 }
               </table>
 
