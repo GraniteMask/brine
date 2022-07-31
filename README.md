@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Krypto - Brine Clone
+
+Working video - https://drive.google.com/file/d/1MYsvuSmdwDodguIGJaUYJK_PyC-vU3G1/view?usp=sharing
+
+![image](https://user-images.githubusercontent.com/63235918/182024012-fa661dd6-ac3e-4a65-9c88-e0da0f2ad0c8.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
