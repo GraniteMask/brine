@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(39, 39, 39);
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 8rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-right: 1px solid rgba(139, 139, 139, 0.4);
+  border-left: 1px solid rgb(139, 139, 139, 0.4);
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  font-size: 28px; 
+}
+
+.headnav{
+  height: 6rem;
+  border-bottom: 1px solid rgb(139, 139, 139, 0.4);
+  margin-left: 8rem;
+  display: grid;
+  grid-template-columns: 14% 14% 14% 14% 14% 30% ;
+}
+
+.grid-item {
+  border-right: 1px solid rgb(139, 139, 139, 0.4);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.bitcoin{
+  display: flex;
+}
+
+.image{
+  height: 3rem;
+  padding-left: 1rem;
+}
+
+.bitcoin-container{
+  padding-top: 0.3rem;
+  padding-left: 0.8rem;
+}
+
+.bitcoin-text{
+  color: white;
+  font-weight: 400;
+  text-align: left;
+}
+
+.bitcoin-conversion{
+  color: gray;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.bitcoin-chevron{
+  color: white; 
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.last-price{
+  text-align: left;
+  padding-top: 0.3rem;
+}
+
+.last-price-text{
+  font-size: 1rem;
+  color: gray;
+}
+
+.last-price-text-value{
+  font-size: 1.3rem;
+  color: rgb(3, 150, 3);
+}
+.low-text-value{
+  font-size: 1.3rem;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Main Area*/
+
+.main-area{
+  display: grid;
+  grid-template-columns: 55% 20% 25% ;
+  margin-left: 8rem;
+}
+
+.chart-orders{
+  border-right: 1px solid rgb(139, 139, 139, 0.4);
+  height: 100%;
+}
+
+.charts{
+  height: 50vh;
+  border-bottom: 1px solid rgb(139, 139, 139, 0.4);
+}
+
+/* .orders{
+  border-bottom: 1px solid rgb(139, 139, 139, 0.4);
+} */
+
+.orders-nav{
+  height: 5rem;
+  border-bottom: 1px solid rgb(139, 139, 139, 0.4);
+  display: flex;
+}
+
+.orders-nav-button{
+  margin-left: 2rem;
+  margin-top: 2rem;
+  color: gray;
+  font-size: 1rem;
+}
+
+.table{
+  font-size: 1rem;
+  width: 100%;
+}
+
+.table-heading{
+  padding-top: 0.8rem !important;
+  padding-bottom: 0.8rem !important;
+  border-bottom: 1px solid rgb(139, 139, 139, 0.4);
+  color: gray; 
+}
+
+.table-entries{
+  padding-top: 0.8rem !important;
+  padding-bottom: 0.8rem !important;
+  border-bottom: 1px solid rgb(139, 139, 139, 0.4);
+  color: white; 
+}
+
+.order-book{
+  border-right: 1px solid rgb(139, 139, 139, 0.4);
+  height: 100%;
+}
+
+.orders1{
+  height: 50vh;
+  border-bottom: 1px solid rgb(139, 139, 139, 0.4);
+  overflow: scroll;
+  overflow-x: hidden; 
+}
+.orders2{
+  height: 40vh;
+  border-bottom: 1px solid rgb(139, 139, 139, 0.4);
+  overflow: scroll;
+  overflow-x: hidden; 
+}
+
+.background{
+  background: rgba(3, 150, 3, 0.2);
+}
+
+.background2{
+  background: rgb(139, 139, 139, 0.1);
+}
+
+.background3{
+  background: rgb(3, 150, 3);
+}
